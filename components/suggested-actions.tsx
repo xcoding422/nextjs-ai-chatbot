@@ -13,24 +13,44 @@ interface SuggestedActionsProps {
 function PureSuggestedActions({ chatId, append }: SuggestedActionsProps) {
   const suggestedActions = [
     {
-      title: 'What are the advantages',
-      label: 'of using Next.js?',
-      action: 'What are the advantages of using Next.js?',
+      title: 'Vue.js框架',
+      label: '有哪些核心优势？',
+      action: 'Vue.js框架有哪些核心优势？',
     },
     {
-      title: 'Write code to',
-      label: `demonstrate djikstra's algorithm`,
-      action: `Write code to demonstrate djikstra's algorithm`,
+      title: '用Python实现',
+      label: '二叉树遍历算法',
+      action: '用Python实现二叉树遍历算法',
     },
     {
-      title: 'Help me write an essay',
-      label: `about silicon valley`,
-      action: `Help me write an essay about silicon valley`,
+      title: '帮我撰写关于',
+      label: '人工智能伦理的报告大纲',
+      action: '帮我撰写关于人工智能伦理的报告大纲',
     },
     {
-      title: 'What is the weather',
-      label: 'in San Francisco?',
-      action: 'What is the weather in San Francisco?',
+      title: '把这句话翻译成',
+      label: '英文："可持续发展至关重要"',
+      action: '把这句话翻译成英文："可持续发展至关重要"',
+    },
+    {
+      title: '计算直角三角形',
+      label: '斜边长度（底边5cm，高12cm）',
+      action: '计算直角三角形斜边长度（底边5cm，高12cm）',
+    },
+    {
+      title: '现在纽约',
+      label: '当地时间是几点？',
+      action: '现在纽约当地时间是几点？',
+    },
+    {
+      title: '分析辛亥革命',
+      label: '对中国近代史的影响',
+      action: '分析辛亥革命对中国近代史的影响',
+    },
+    {
+      title: '如何自然',
+      label: '降低胆固醇水平？',
+      action: '如何自然降低胆固醇水平？',
     },
   ];
 
