@@ -49,18 +49,18 @@ export function PureMessageActions({
                   .trim();
 
                 if (!textFromParts) {
-                  toast.error("There's no text to copy!");
+                  toast.error("没有文本可复制！");
                   return;
                 }
 
                 await copyToClipboard(textFromParts);
-                toast.success('Copied to clipboard!');
+                toast.success('已复制到剪贴板！');
               }}
             >
               <CopyIcon />
             </Button>
           </TooltipTrigger>
-          <TooltipContent>Copy</TooltipContent>
+          <TooltipContent>复制</TooltipContent>
         </Tooltip>
 
         <Tooltip>
@@ -81,7 +81,7 @@ export function PureMessageActions({
                 });
 
                 toast.promise(upvote, {
-                  loading: 'Upvoting Response...',
+                  loading: '正在点赞...',
                   success: () => {
                     mutate<Array<Vote>>(
                       `/api/vote?chatId=${chatId}`,
@@ -104,16 +104,16 @@ export function PureMessageActions({
                       { revalidate: false },
                     );
 
-                    return 'Upvoted Response!';
+                    return '点赞成功！';
                   },
-                  error: 'Failed to upvote response.',
+                  error: '点赞失败。',
                 });
               }}
             >
               <ThumbUpIcon />
             </Button>
           </TooltipTrigger>
-          <TooltipContent>Upvote Response</TooltipContent>
+          <TooltipContent>点赞响应</TooltipContent>
         </Tooltip>
 
         <Tooltip>
@@ -134,7 +134,7 @@ export function PureMessageActions({
                 });
 
                 toast.promise(downvote, {
-                  loading: 'Downvoting Response...',
+                  loading: '等待...',
                   success: () => {
                     mutate<Array<Vote>>(
                       `/api/vote?chatId=${chatId}`,
@@ -157,16 +157,16 @@ export function PureMessageActions({
                       { revalidate: false },
                     );
 
-                    return 'Downvoted Response!';
+                    return '很抱歉带来不好的体验!';
                   },
-                  error: 'Failed to downvote response.',
+                  error: '不可以不喜欢!',
                 });
               }}
             >
               <ThumbDownIcon />
             </Button>
           </TooltipTrigger>
-          <TooltipContent>Downvote Response</TooltipContent>
+          <TooltipContent>不喜欢</TooltipContent>
         </Tooltip>
       </div>
     </TooltipProvider>
