@@ -96,7 +96,7 @@ export function MessageEditor({
             reload();
           }}
         >
-          {isSubmitting ? 'Sending...' : 'Send'}
+          {isSubmitting ? '发送中...' : '发送'}
         </Button>
       </div>
     </div>
