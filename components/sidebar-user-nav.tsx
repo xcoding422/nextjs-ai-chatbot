@@ -29,7 +29,7 @@ export function SidebarUserNav({ user }: { user: User }) {
             <SidebarMenuButton className="data-[state=open]:bg-sidebar-accent bg-background data-[state=open]:text-sidebar-accent-foreground h-10">
               <Image
                 src={`https://avatar.vercel.sh/${user.email}`}
-                alt={user.email ?? 'User Avatar'}
+                alt={user.email ?? '用户头像'}
                 width={24}
                 height={24}
                 className="rounded-full"
@@ -59,7 +59,7 @@ export function SidebarUserNav({ user }: { user: User }) {
                   });
                 }}
               >
-                Sign out
+                退出登录
               </button>
             </DropdownMenuItem>
           </DropdownMenuContent>
