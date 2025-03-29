@@ -15,6 +15,6 @@ export const chatModels: Array<ChatModel> = [
   {
     id: 'chat-model-reasoning',
     name: 'Deepseek R1',
-    description: '深度思考Deepseek R1大模型',
+    description: '深度思考Deepseek-R1-70B大模型',
   },
 ];
