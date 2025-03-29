@@ -112,7 +112,7 @@ const PurePreviewMessage = ({
                               <PencilEditIcon />
                             </Button>
                           </TooltipTrigger>
-                          <TooltipContent>Edit message</TooltipContent>
+                          <TooltipContent>编辑消息</TooltipContent>
                         </Tooltip>
                       )}
 
@@ -255,7 +255,7 @@ export const ThinkingMessage = () => {
     >
       <div
         className={cx(
-          'flex gap-4 group-data-[role=user]/message:px-3 w-full group-data-[role=user]/message:w-fit group-data-[role=user]/message:ml-auto group-data-[role=user]/message:max-w-2xl group-data-[role=user]/message:py-2 rounded-xl',
+          'flex gap-4 group-data-[role=user]/message:px-3 w-full group-data-[role=user]/message:w-fit group-data-[role=user]/message:ml-auto group-data-[role=user]/message:max-w-2xl group-data-[r[...]',
           {
             'group-data-[role=user]/message:bg-muted': true,
           },
@@ -267,7 +267,7 @@ export const ThinkingMessage = () => {
 
         <div className="flex flex-col gap-2 w-full">
           <div className="flex flex-col gap-4 text-muted-foreground">
-            Hmm...
+            等待...
           </div>
         </div>
       </div>
