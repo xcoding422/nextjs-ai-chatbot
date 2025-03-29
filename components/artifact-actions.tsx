@@ -32,7 +32,7 @@ function PureArtifactActions({
   );
 
   if (!artifactDefinition) {
-    throw new Error('Artifact definition not found!');
+    throw new Error('找不到工件定义！');
   }
 
   const actionContext: ArtifactActionContext = {
@@ -62,7 +62,7 @@ function PureArtifactActions({
                 try {
                   await Promise.resolve(action.onClick(actionContext));
                 } catch (error) {
-                  toast.error('Failed to execute action');
+                  toast.error('执行操作失败');
                 } finally {
                   setIsLoading(false);
                 }
