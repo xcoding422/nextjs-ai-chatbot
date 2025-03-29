@@ -216,7 +216,7 @@ const ReadingLevelSelector = ({
                 if (currentLevel !== 2 && hasUserSelectedLevel) {
                   append({
                     role: 'user',
-                    content: `Please adjust the reading level to ${LEVELS[currentLevel]} level.`,
+                    content: `请将阅读级别调整为 ${LEVELS[currentLevel]} 级别.`,
                   });
 
                   setSelectedTool(null);
