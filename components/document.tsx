@@ -11,13 +11,13 @@ const getActionText = (
 ) => {
   switch (type) {
     case 'create':
-      return tense === 'present' ? 'Creating' : 'Created';
+      return tense === 'present' ? '创建中' : '已创建';
     case 'update':
-      return tense === 'present' ? 'Updating' : 'Updated';
+      return tense === 'present' ? '更新中' : '已更新';
     case 'request-suggestions':
       return tense === 'present'
-        ? 'Adding suggestions'
-        : 'Added suggestions to';
+        ? '添加建议中'
+        : '已添加建议到';
     default:
       return null;
   }
@@ -43,7 +43,7 @@ function PureDocumentToolResult({
       onClick={(event) => {
         if (isReadonly) {
           toast.error(
-            'Viewing files in shared chats is currently not supported.',
+            '当前不支持在共享聊天中查看文件。',
           );
           return;
         }
@@ -106,7 +106,7 @@ function PureDocumentToolCall({
       onClick={(event) => {
         if (isReadonly) {
           toast.error(
-            'Viewing files in shared chats is currently not supported.',
+            '当前不支持在共享聊天中查看文件。',
           );
           return;
         }
