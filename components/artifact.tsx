@@ -417,11 +417,11 @@ function PureArtifact({
 
                   {isContentDirty ? (
                     <div className="text-sm text-muted-foreground">
-                      Saving changes...
+                      保存更改...
                     </div>
                   ) : document ? (
                     <div className="text-sm text-muted-foreground">
-                      {`Updated ${formatDistance(
+                      {`更新于 ${formatDistance(
                         new Date(document.createdAt),
                         new Date(),
                         {
