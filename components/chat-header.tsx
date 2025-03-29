@@ -45,7 +45,7 @@ function PureChatHeader({
               }}
             >
               <PlusIcon />
-              <span className="md:sr-only">信聊天</span>
+              <span className="md:sr-only">新聊天</span>
             </Button>
           </TooltipTrigger>
           <TooltipContent>新聊天</TooltipContent>
